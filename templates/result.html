@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prediction Result</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+<h2>Prediction Result</h2>
+<h3>Patient Name: {{ name }}</h3>
+<h3>{{ result }}</h3>
+
+<hr>
+
+<h2>Visualizations</h2>
+
+<h3>Feature Importance</h3>
+<img src="data:image/png;base64,{{ feature_importance }}" width="600"/>
+
+<h3>Correlation Heatmap</h3>
+<img src="data:image/png;base64,{{ heatmap }}" width="600"/>
+
+<h3>Age Distribution</h3>
+<img src="data:image/png;base64,{{ distribution }}" width="600"/>
+
+<br><br>
+
+<a href="/">Go Back</a>
+
+</div>
+
+</body>
+</html>
